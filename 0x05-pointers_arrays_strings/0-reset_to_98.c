@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * main - updates variable value
+ * void reset_to_98 - updates n value
  * @n: variable to be updated
  *
- * pointer points to var n
+ * pointer is fx argument
  */
 void reset_to_98(int *n)
 {
