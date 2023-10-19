@@ -12,6 +12,8 @@ void print_rev(char *s)
 	int counter;
 	int j;
 
+	counter = 0;
+
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		counter++;
@@ -23,4 +25,5 @@ void print_rev(char *s)
 	}
 
 	_putchar('\n');
+
 }
