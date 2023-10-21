@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - change string to upper
- * @s: parameter as input 
+ * @s: parameter as input
  *
  * Return: String in uppercase
  */
