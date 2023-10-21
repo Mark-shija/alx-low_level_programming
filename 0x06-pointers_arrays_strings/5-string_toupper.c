@@ -2,11 +2,11 @@
 
 /**
  * string_toupper - change string to upper
- * @s: parameter as input
+ * @s: string parameter 
  *
- * Return: String in uppercase
+ * Return: a string in uppercase
  */
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
 	int i = 0;
 
@@ -16,9 +16,7 @@ char *string_toupper(char *)
 		{
 			s[i] = s[i] - 32;
 		}
-
 		i++;
 	}
-
 	return (s);
 }
