@@ -1,0 +1,9 @@
+# Ignore files with the pattern "main.c" in the root directory
+/main.c
+
+# Ignore all files in the "test" directory
+/test/*
+
+# Include files with the pattern "main.c" in the "test" directory
+!/test/**/main.c
+
