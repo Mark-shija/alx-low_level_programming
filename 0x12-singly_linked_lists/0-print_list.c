@@ -5,8 +5,11 @@
  * print_list - Prints linked list
  *
  * @h: Points to struct
+ *
  * @index: iterator to next node
+ *
  * Return: Integer
+ *
  * author:Mark shija
  */
 size_t print_list(const list_t *h)
