@@ -3,10 +3,7 @@
 
 /**
  * print_list - Prints linked list
- *
  * @h: Points to struct
- *
- * @index: iterator to next node
  *
  * Return: Integer
  *
