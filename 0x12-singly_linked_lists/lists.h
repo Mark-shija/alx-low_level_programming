@@ -6,10 +6,15 @@
 #include <string.h>
 
 /**
- * list_s - string struct
- * @str: dynamic block holds string
+ * struct list_s - singly linked list
+ *
+ * @str: dynamic block holding  string
+ *
  * @len: string length
- * @list *next: next node
+ *
+ * @next: points to  next node
+ *
+ * Description: singly linked list node structure
  */
 
 typedef struct list_s
