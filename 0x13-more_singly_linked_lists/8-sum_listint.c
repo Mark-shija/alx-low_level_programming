@@ -1,34 +1,22 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index - Nth node
+ * sum_listint - Sum of all data (n)
  *
- * @head: pointer to head node
+ * @head: Head of node
  *
- * @i: int
  *
- * Return: listint_t
+ * Return: void
  */
 
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int i)
+int sum_listint(listint_t *head)
 {
-
-	unsigned int count;
-
-	if (head == NULL)
-	{
-		return (NULL);
-	}
-	count = 0;
+	unsigned int count = 0;
 
 	while (head != NULL)
 	{
-		if (i == count)
-		{
-			return (head);
-		}
-		count++;
+		count += head->n;
 		head = head->next;
 	}
-	return (NULL);
+	return (count);
 }
