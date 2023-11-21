@@ -5,9 +5,9 @@
  *
  * @head: pointer to head node
  *
- * @index: int
+ * @k: int
  *
- * Return:last node  listint_t
+ * Return: listint_t
  */
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int k)
