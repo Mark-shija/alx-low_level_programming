@@ -3,8 +3,7 @@
 #include <stdio.h>
 
 /*
- * malloc_checked - Allocates memory using malloc f(x)
- * Function exit with 98 error
+ * malloc_checked - allocates memory using malloc, exit(98) when itfails.
  * @b:Function parameter
  * Return: Always allocated memory address.
  */
@@ -15,5 +14,5 @@ void *malloc_checked(unsigned int b)
 	ptr = malloc(b);
 	if (ptr == NULL)
 		exit(98);
-	return(ptr);
+	return (ptr);
 }
