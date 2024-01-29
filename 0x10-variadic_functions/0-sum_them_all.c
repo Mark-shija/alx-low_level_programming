@@ -3,8 +3,6 @@
 /**
   * sum_them_all - sums all arguments passed
   * @n: number of arguments passed int a function in total
-  * @i: iterator to the arguments
-  * @sum: stores the sum of arguments
   *
   * Return: Always integer sum
   */
