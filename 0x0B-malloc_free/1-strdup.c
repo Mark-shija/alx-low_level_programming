@@ -11,9 +11,9 @@
 char *_strdup(char *str)
 {
 	/* Implementation of _strdup function */
-
 	char *dups;
-	dups = (char *)malloc(strlen(str) +1);
+
+	dups = (char *)malloc(strlen(str) + 1);
 
 	if (dups == NULL)
 		return (NULL);
