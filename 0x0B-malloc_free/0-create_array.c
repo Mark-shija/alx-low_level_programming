@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * create-array - create an array of char
+ * create_array - create an array of char
  * @size: the size of character
  * @c: A string to be copied into memory
- * Return: Alwalys a pointer to a memory
- * 		otherwise return NULL
+ * Return: Alwalys a pointer to allocated memory
+ * or, return null
  */
 char *create_array(unsigned int size, char c)
 {
@@ -16,7 +16,7 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 
-	new_char = (char *)malloc(size * sizeof (char));
+	new_char = (char *)malloc(size * sizeof(char));
 
 	if (new_char == NULL)
 		return (NULL);
