@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script prints multiple choice questions about the types of network
+echo "3"
+echo "2"
+echo "1"
