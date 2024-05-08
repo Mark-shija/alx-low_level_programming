@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script prints multiple choice answers about TCP and UDP protocals
+echo "1"
+echo "2"
+echo "1"
