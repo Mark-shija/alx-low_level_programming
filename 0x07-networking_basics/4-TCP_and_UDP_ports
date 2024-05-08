@@ -1,0 +1,14 @@
+#!/bin/bash
+# This script displays listening TCP and UDP ports along with their corresponding PID and program name.
+echo "Active Internet connections (only servers)"
+netstat -tuln | grep 'LISTEN' | awk '{print $1, $4, $5, $6}' | while read -r proto local foreign state; do
+    pid_program=$(lsof -i "${local#*:}" | awk 'NR==2{print $2, $1}')
+    echo "${proto} ${local} ${foreign} ${state} ${pid_program}"
+done
+
+echo "Active Internet connections (only servers)"
+netstat -uln | grep 'UNCONN' | awk '{print $1, $4}' | while read -r proto local; do
+    pid_program=$(lsof -i "${local#*:}" | awk 'NR==2{print $2, $1}')
+    echo "${proto} ${local} ${pid_program}"
+done
+
