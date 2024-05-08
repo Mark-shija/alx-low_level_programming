@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script prints multiple choic answers  about IP and MAC Address
+echo "2"
+echo "3"
